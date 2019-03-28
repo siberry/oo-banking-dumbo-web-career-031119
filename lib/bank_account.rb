@@ -1,5 +1,5 @@
 class BankAccount
-  attr_reader :name, :status
+  attr_reader :name, 
   attr_accessor :balance
   
   def initialize(name)
@@ -17,7 +17,8 @@ class BankAccount
   end
   
   def valid
-    self.status == "open" && self.balance > 0
+    if self.status == "open" && self.balance > 0
+      self.
   end
     
 end
